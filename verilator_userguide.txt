@@ -1,0 +1,10 @@
+
+remove old obj_dir folders
+verilator --binary dmem.v tb_dmem.v --top tb_dmem
+//obj_dir folder will be generated
+./obj_dir/Vtb_dmem
+
+
+
+verilator --binary file1.v file2.v ... --top <top_module_name>
+./obj_dir/V<tb_name>
