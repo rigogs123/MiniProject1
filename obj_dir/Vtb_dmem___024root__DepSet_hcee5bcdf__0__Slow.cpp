@@ -16,13 +16,14 @@ VL_ATTR_COLD void Vtb_dmem___024root___eval_initial__TOP(Vtb_dmem___024root* vlS
     Vtb_dmem__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtb_dmem___024root___eval_initial__TOP\n"); );
     // Init
-    VlWide<4>/*127:0*/ __Vtemp_1;
+    VlWide<5>/*159:0*/ __Vtemp_1;
     // Body
     __Vtemp_1[0U] = 0x2e686578U;
-    __Vtemp_1[1U] = 0x696e6974U;
-    __Vtemp_1[2U] = 0x6f72795fU;
-    __Vtemp_1[3U] = 0x6d656dU;
-    VL_READMEM_N(true, 8, 32, 0, VL_CVT_PACK_STR_NW(4, __Vtemp_1)
+    __Vtemp_1[1U] = 0x595f494eU;
+    __Vtemp_1[2U] = 0x454d4f52U;
+    __Vtemp_1[3U] = 0x454d5f4dU;
+    __Vtemp_1[4U] = 0x444dU;
+    VL_READMEM_N(true, 8, 32, 0, VL_CVT_PACK_STR_NW(5, __Vtemp_1)
                  ,  &(vlSelf->tb_dmem__DOT__uut__DOT__mem)
                  , 0, ~0ULL);
 }
@@ -42,13 +43,14 @@ VL_ATTR_COLD void Vtb_dmem___024root___eval_final__TOP(Vtb_dmem___024root* vlSel
     Vtb_dmem__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtb_dmem___024root___eval_final__TOP\n"); );
     // Init
-    VlWide<4>/*127:0*/ __Vtemp_1;
+    VlWide<5>/*159:0*/ __Vtemp_1;
     // Body
     __Vtemp_1[0U] = 0x2e686578U;
-    __Vtemp_1[1U] = 0x5f6f7574U;
-    __Vtemp_1[2U] = 0x6d6f7279U;
-    __Vtemp_1[3U] = 0x6d65U;
-    VL_WRITEMEM_N(true, 8, 32, 0, VL_CVT_PACK_STR_NW(4, __Vtemp_1)
+    __Vtemp_1[1U] = 0x5f4f5554U;
+    __Vtemp_1[2U] = 0x4d4f5259U;
+    __Vtemp_1[3U] = 0x4d5f4d45U;
+    __Vtemp_1[4U] = 0x444d45U;
+    VL_WRITEMEM_N(true, 8, 32, 0, VL_CVT_PACK_STR_NW(5, __Vtemp_1)
                   ,  &(vlSelf->tb_dmem__DOT__uut__DOT__mem)
                   , 0, ~0ULL);
 }

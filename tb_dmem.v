@@ -1,9 +1,10 @@
 `timescale 1ns / 1ps
+`include "variables.vh"
 
 module tb_dmem;
 
     // Parameters
-    parameter MEM_BYTES = 32; // You can change this to test different sizes
+    //parameter MEM_BYTES = 32; // You can change this to test different sizes
 
     // Testbench signals
     reg clk;
@@ -13,9 +14,7 @@ module tb_dmem;
     wire [31:0] read_data;
 
     // Instantiate the memory module
-    dmem #(
-        .MEM_BYTES(MEM_BYTES)
-    ) uut (
+    dmem uut (
         .clk(clk),
         .write_en(write_en),
         .addr(addr),
@@ -65,12 +64,12 @@ module tb_dmem;
         $display("Misaligned read @ 0x%08h = 0x%08h (expected 0)", addr, read_data);
 
         // === Try out-of-bounds access (should return 0) ===
-        addr = MEM_BYTES;  // This is just past the end
+        addr = `MEM_BYTES_DMEM;  // This is just past the end
         #10;
         $display("Out-of-bounds read @ 0x%08h = 0x%08h (expected 0)", addr, read_data);
 
         // === Write at last valid word address ===
-        addr = MEM_BYTES - 4;
+        addr = `MEM_BYTES_DMEM - 4;
         write_data = 32'hAABBCCDD;
         write_en = 1;
         #10;

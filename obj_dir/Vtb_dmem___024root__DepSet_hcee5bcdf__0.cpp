@@ -31,7 +31,7 @@ VL_INLINE_OPT VlCoroutine Vtb_dmem___024root___eval_initial__TOP__Vtiming__0(Vtb
         co_await vlSelf->__VdlySched.delay(0x1388ULL, 
                                            nullptr, 
                                            "tb_dmem.v", 
-                                           29);
+                                           28);
         vlSelf->tb_dmem__DOT__clk = (1U & (~ (IData)(vlSelf->tb_dmem__DOT__clk)));
     }
 }
@@ -47,11 +47,11 @@ VL_INLINE_OPT VlCoroutine Vtb_dmem___024root___eval_initial__TOP__Vtiming__1(Vtb
     VL_WRITEF("===== Starting dmem test =====\n");
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "tb_dmem.v", 
-                                       42);
+                                       41);
     vlSelf->tb_dmem__DOT__addr = 0U;
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "tb_dmem.v", 
-                                       46);
+                                       45);
     VL_WRITEF("Initial read @ 0x%08x = 0x%08x\n",32,
               vlSelf->tb_dmem__DOT__addr,32,vlSelf->tb_dmem__DOT__read_data);
     vlSelf->tb_dmem__DOT__addr = 4U;
@@ -59,26 +59,26 @@ VL_INLINE_OPT VlCoroutine Vtb_dmem___024root___eval_initial__TOP__Vtiming__1(Vtb
     vlSelf->tb_dmem__DOT__write_en = 1U;
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "tb_dmem.v", 
-                                       53);
+                                       52);
     vlSelf->tb_dmem__DOT__write_en = 0U;
     VL_WRITEF("Wrote 0x%08x to address 0x%08x\n",32,
               vlSelf->tb_dmem__DOT__write_data,32,vlSelf->tb_dmem__DOT__addr);
     vlSelf->tb_dmem__DOT__addr = 4U;
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "tb_dmem.v", 
-                                       59);
+                                       58);
     VL_WRITEF("Read @ 0x%08x = 0x%08x (expected 0xDEADBEEF)\n",
               32,vlSelf->tb_dmem__DOT__addr,32,vlSelf->tb_dmem__DOT__read_data);
     vlSelf->tb_dmem__DOT__addr = 5U;
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "tb_dmem.v", 
-                                       64);
+                                       63);
     VL_WRITEF("Misaligned read @ 0x%08x = 0x%08x (expected 0)\n",
               32,vlSelf->tb_dmem__DOT__addr,32,vlSelf->tb_dmem__DOT__read_data);
     vlSelf->tb_dmem__DOT__addr = 0x20U;
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "tb_dmem.v", 
-                                       69);
+                                       68);
     VL_WRITEF("Out-of-bounds read @ 0x%08x = 0x%08x (expected 0)\n",
               32,vlSelf->tb_dmem__DOT__addr,32,vlSelf->tb_dmem__DOT__read_data);
     vlSelf->tb_dmem__DOT__addr = 0x1cU;
@@ -86,21 +86,21 @@ VL_INLINE_OPT VlCoroutine Vtb_dmem___024root___eval_initial__TOP__Vtiming__1(Vtb
     vlSelf->tb_dmem__DOT__write_en = 1U;
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "tb_dmem.v", 
-                                       76);
+                                       75);
     vlSelf->tb_dmem__DOT__write_en = 0U;
     VL_WRITEF("Wrote 0x%08x to last valid word address 0x%08x\n",
               32,vlSelf->tb_dmem__DOT__write_data,32,
               vlSelf->tb_dmem__DOT__addr);
     co_await vlSelf->__VdlySched.delay(0x2710ULL, nullptr, 
                                        "tb_dmem.v", 
-                                       81);
+                                       80);
     VL_WRITEF("Read @ 0x%08x = 0x%08x (expected 0xAABBCCDD)\n",
               32,vlSelf->tb_dmem__DOT__addr,32,vlSelf->tb_dmem__DOT__read_data);
     co_await vlSelf->__VdlySched.delay(0x4e20ULL, nullptr, 
                                        "tb_dmem.v", 
-                                       85);
+                                       84);
     VL_WRITEF("===== dmem test completed =====\n");
-    VL_FINISH_MT("tb_dmem.v", 87, "");
+    VL_FINISH_MT("tb_dmem.v", 86, "");
 }
 
 void Vtb_dmem___024root___eval_act(Vtb_dmem___024root* vlSelf) {
@@ -270,7 +270,7 @@ void Vtb_dmem___024root___eval(Vtb_dmem___024root* vlSelf) {
 #ifdef VL_DEBUG
             Vtb_dmem___024root___dump_triggers__nba(vlSelf);
 #endif
-            VL_FATAL_MT("tb_dmem.v", 3, "", "NBA region did not converge.");
+            VL_FATAL_MT("tb_dmem.v", 4, "", "NBA region did not converge.");
         }
         __VnbaIterCount = ((IData)(1U) + __VnbaIterCount);
         __VnbaContinue = 0U;
@@ -281,7 +281,7 @@ void Vtb_dmem___024root___eval(Vtb_dmem___024root* vlSelf) {
 #ifdef VL_DEBUG
                 Vtb_dmem___024root___dump_triggers__act(vlSelf);
 #endif
-                VL_FATAL_MT("tb_dmem.v", 3, "", "Active region did not converge.");
+                VL_FATAL_MT("tb_dmem.v", 4, "", "Active region did not converge.");
             }
             vlSelf->__VactIterCount = ((IData)(1U) 
                                        + vlSelf->__VactIterCount);

@@ -1,7 +1,8 @@
 /* verilator lint_off TIMESCALEMOD */
-module dmem #(
-    parameter MEM_BYTES = 32  // Total memory size in bytes (must be multiple of 4)
-)(
+`include "variables.vh"
+
+module dmem (
+
     input wire clk,
     input wire write_en,
     input wire [31:0] addr,           // 32-bit byte address
@@ -9,14 +10,14 @@ module dmem #(
     output reg [31:0] read_data       // Word (4 bytes) to read
 );
     // Memory array: byte-addressable
-    reg [7:0] mem [0:MEM_BYTES-1];
+    reg [7:0] mem [0:`MEM_BYTES_DMEM-1];
 
     // Calculate max valid address for word-aligned access
-    localparam LAST_VALID_ADDR = MEM_BYTES - 4;
+    localparam LAST_VALID_ADDR = `MEM_BYTES_DMEM - 4;
 
     // Memory initialization
     initial begin
-        $readmemh("memory_init.hex", mem);
+        $readmemh("DMEM_MEMORY_IN.hex", mem);
     end
 
     // Memory access
@@ -43,7 +44,7 @@ module dmem #(
 
     // Optional write-back to file
     final begin
-        $writememh("memory_out.hex", mem);
+        $writememh("DMEM_MEMORY_OUT.hex", mem);
     end
 endmodule
 
