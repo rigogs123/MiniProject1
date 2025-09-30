@@ -38,6 +38,7 @@
 `define GTEI 4'b1100
 
 `define LUI  4'b1101
+`define JUMP 4'b1110
 //=====MEMORY INSTRUCTIONS=======
 `define LW   4'b0000
 `define LH   4'b0001
@@ -54,6 +55,6 @@
 `define BLTE 4'b0011 
 `define BGT  4'b0100
 `define BGTE 4'b0101
-`define JUMP 4'b0110
+
 
 `endif
