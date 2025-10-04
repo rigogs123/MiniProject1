@@ -45,7 +45,10 @@ module alu (
         under = 1'b0;
         sum = 32'd0;
         diff = 32'd0;
-
+        x = 32'd0;
+        y = 32'd0;
+        carry = 32'd0;
+        mult_result = 64'd0;
         case (alu_sel)
 
             // -----------------------
