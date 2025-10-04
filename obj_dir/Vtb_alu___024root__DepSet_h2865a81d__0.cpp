@@ -19,35 +19,18 @@ VL_INLINE_OPT void Vtb_alu___024root___act_sequent__TOP__0(Vtb_alu___024root* vl
     if (false && vlSelf) {}  // Prevent unused
     Vtb_alu__Syms* const __restrict vlSymsp VL_ATTR_UNUSED = vlSelf->vlSymsp;
     VL_DEBUG_IF(VL_DBG_MSGF("+    Vtb_alu___024root___act_sequent__TOP__0\n"); );
-    // Init
-    IData/*31:0*/ tb_alu__DOT__dut__DOT__a;
-    tb_alu__DOT__dut__DOT__a = 0;
-    IData/*31:0*/ tb_alu__DOT__dut__DOT__b;
-    tb_alu__DOT__dut__DOT__b = 0;
-    IData/*31:0*/ tb_alu__DOT__dut__DOT__sum;
-    tb_alu__DOT__dut__DOT__sum = 0;
-    IData/*31:0*/ tb_alu__DOT__dut__DOT__diff;
-    tb_alu__DOT__dut__DOT__diff = 0;
-    IData/*31:0*/ tb_alu__DOT__dut__DOT__x;
-    tb_alu__DOT__dut__DOT__x = 0;
-    IData/*31:0*/ tb_alu__DOT__dut__DOT__y;
-    tb_alu__DOT__dut__DOT__y = 0;
-    QData/*63:0*/ tb_alu__DOT__dut__DOT__mult_result;
-    tb_alu__DOT__dut__DOT__mult_result = 0;
-    IData/*31:0*/ tb_alu__DOT__dut__DOT__carry;
-    tb_alu__DOT__dut__DOT__carry = 0;
     // Body
-    tb_alu__DOT__dut__DOT__a = vlSelf->tb_alu__DOT__input1;
-    tb_alu__DOT__dut__DOT__b = vlSelf->tb_alu__DOT__input2;
+    vlSelf->tb_alu__DOT__dut__DOT__a = vlSelf->tb_alu__DOT__input1;
+    vlSelf->tb_alu__DOT__dut__DOT__b = vlSelf->tb_alu__DOT__input2;
     vlSelf->tb_alu__DOT__out = 0U;
     vlSelf->tb_alu__DOT__over = 0U;
     vlSelf->tb_alu__DOT__under = 0U;
-    tb_alu__DOT__dut__DOT__sum = 0U;
-    tb_alu__DOT__dut__DOT__diff = 0U;
-    tb_alu__DOT__dut__DOT__x = 0U;
-    tb_alu__DOT__dut__DOT__y = 0U;
-    tb_alu__DOT__dut__DOT__carry = 0U;
-    tb_alu__DOT__dut__DOT__mult_result = 0ULL;
+    vlSelf->tb_alu__DOT__dut__DOT__sum = 0U;
+    vlSelf->tb_alu__DOT__dut__DOT__diff = 0U;
+    vlSelf->tb_alu__DOT__dut__DOT__x = 0U;
+    vlSelf->tb_alu__DOT__dut__DOT__y = 0U;
+    vlSelf->tb_alu__DOT__dut__DOT__carry = 0U;
+    vlSelf->tb_alu__DOT__dut__DOT__mult_result = 0ULL;
     if ((8U & (IData)(vlSelf->tb_alu__DOT__alu_sel))) {
         vlSelf->tb_alu__DOT__out = ((4U & (IData)(vlSelf->tb_alu__DOT__alu_sel))
                                      ? ((2U & (IData)(vlSelf->tb_alu__DOT__alu_sel))
@@ -91,15 +74,16 @@ VL_INLINE_OPT void Vtb_alu___024root___act_sequent__TOP__0(Vtb_alu___024root* vl
             vlSelf->tb_alu__DOT__out = (vlSelf->tb_alu__DOT__input1 
                                         & vlSelf->tb_alu__DOT__input2);
         } else {
-            tb_alu__DOT__dut__DOT__mult_result = VL_MULS_QQQ(64, 
-                                                             VL_EXTENDS_QI(64,32, tb_alu__DOT__dut__DOT__a), 
-                                                             VL_EXTENDS_QI(64,32, vlSelf->tb_alu__DOT__input2));
-            vlSelf->tb_alu__DOT__out = (IData)(tb_alu__DOT__dut__DOT__mult_result);
-            if (((IData)((tb_alu__DOT__dut__DOT__mult_result 
+            vlSelf->tb_alu__DOT__dut__DOT__mult_result 
+                = VL_MULS_QQQ(64, VL_EXTENDS_QI(64,32, vlSelf->tb_alu__DOT__dut__DOT__a), 
+                              VL_EXTENDS_QI(64,32, vlSelf->tb_alu__DOT__input2));
+            vlSelf->tb_alu__DOT__out = (IData)(vlSelf->tb_alu__DOT__dut__DOT__mult_result);
+            if (((IData)((vlSelf->tb_alu__DOT__dut__DOT__mult_result 
                           >> 0x20U)) != (- (IData)(
                                                    (vlSelf->tb_alu__DOT__out 
                                                     >> 0x1fU))))) {
-                if (((tb_alu__DOT__dut__DOT__a ^ vlSelf->tb_alu__DOT__input2) 
+                if (((vlSelf->tb_alu__DOT__dut__DOT__a 
+                      ^ vlSelf->tb_alu__DOT__input2) 
                      >> 0x1fU)) {
                     vlSelf->tb_alu__DOT__under = 1U;
                 } else {
@@ -108,57 +92,60 @@ VL_INLINE_OPT void Vtb_alu___024root___act_sequent__TOP__0(Vtb_alu___024root* vl
             }
         }
     } else if ((1U & (IData)(vlSelf->tb_alu__DOT__alu_sel))) {
-        tb_alu__DOT__dut__DOT__y = (~ tb_alu__DOT__dut__DOT__b);
-        tb_alu__DOT__dut__DOT__carry = 1U;
-        while ((0U != tb_alu__DOT__dut__DOT__carry)) {
-            tb_alu__DOT__dut__DOT__x = tb_alu__DOT__dut__DOT__y;
-            tb_alu__DOT__dut__DOT__y = tb_alu__DOT__dut__DOT__carry;
-            tb_alu__DOT__dut__DOT__carry = (tb_alu__DOT__dut__DOT__x 
-                                            & tb_alu__DOT__dut__DOT__y);
-            tb_alu__DOT__dut__DOT__y = (tb_alu__DOT__dut__DOT__x 
-                                        ^ tb_alu__DOT__dut__DOT__y);
-            tb_alu__DOT__dut__DOT__carry = VL_SHIFTL_III(32,32,32, tb_alu__DOT__dut__DOT__carry, 1U);
+        vlSelf->tb_alu__DOT__dut__DOT__y = (~ vlSelf->tb_alu__DOT__dut__DOT__b);
+        vlSelf->tb_alu__DOT__dut__DOT__carry = 1U;
+        while ((0U != vlSelf->tb_alu__DOT__dut__DOT__carry)) {
+            vlSelf->tb_alu__DOT__dut__DOT__x = vlSelf->tb_alu__DOT__dut__DOT__y;
+            vlSelf->tb_alu__DOT__dut__DOT__y = vlSelf->tb_alu__DOT__dut__DOT__carry;
+            vlSelf->tb_alu__DOT__dut__DOT__carry = 
+                (vlSelf->tb_alu__DOT__dut__DOT__x & vlSelf->tb_alu__DOT__dut__DOT__y);
+            vlSelf->tb_alu__DOT__dut__DOT__y = (vlSelf->tb_alu__DOT__dut__DOT__x 
+                                                ^ vlSelf->tb_alu__DOT__dut__DOT__y);
+            vlSelf->tb_alu__DOT__dut__DOT__carry = 
+                VL_SHIFTL_III(32,32,32, vlSelf->tb_alu__DOT__dut__DOT__carry, 1U);
         }
-        tb_alu__DOT__dut__DOT__b = tb_alu__DOT__dut__DOT__y;
-        tb_alu__DOT__dut__DOT__x = tb_alu__DOT__dut__DOT__a;
-        tb_alu__DOT__dut__DOT__y = tb_alu__DOT__dut__DOT__b;
-        while ((0U != tb_alu__DOT__dut__DOT__y)) {
-            tb_alu__DOT__dut__DOT__carry = (tb_alu__DOT__dut__DOT__x 
-                                            & tb_alu__DOT__dut__DOT__y);
-            tb_alu__DOT__dut__DOT__x = (tb_alu__DOT__dut__DOT__x 
-                                        ^ tb_alu__DOT__dut__DOT__y);
-            tb_alu__DOT__dut__DOT__y = VL_SHIFTL_III(32,32,32, tb_alu__DOT__dut__DOT__carry, 1U);
+        vlSelf->tb_alu__DOT__dut__DOT__b = vlSelf->tb_alu__DOT__dut__DOT__y;
+        vlSelf->tb_alu__DOT__dut__DOT__x = vlSelf->tb_alu__DOT__dut__DOT__a;
+        vlSelf->tb_alu__DOT__dut__DOT__y = vlSelf->tb_alu__DOT__dut__DOT__b;
+        while ((0U != vlSelf->tb_alu__DOT__dut__DOT__y)) {
+            vlSelf->tb_alu__DOT__dut__DOT__carry = 
+                (vlSelf->tb_alu__DOT__dut__DOT__x & vlSelf->tb_alu__DOT__dut__DOT__y);
+            vlSelf->tb_alu__DOT__dut__DOT__x = (vlSelf->tb_alu__DOT__dut__DOT__x 
+                                                ^ vlSelf->tb_alu__DOT__dut__DOT__y);
+            vlSelf->tb_alu__DOT__dut__DOT__y = VL_SHIFTL_III(32,32,32, vlSelf->tb_alu__DOT__dut__DOT__carry, 1U);
         }
-        tb_alu__DOT__dut__DOT__diff = tb_alu__DOT__dut__DOT__x;
-        vlSelf->tb_alu__DOT__out = tb_alu__DOT__dut__DOT__diff;
-        if ((((~ (tb_alu__DOT__dut__DOT__a >> 0x1fU)) 
-              & (vlSelf->tb_alu__DOT__input2 >> 0x1fU)) 
-             & (vlSelf->tb_alu__DOT__out >> 0x1fU))) {
+        vlSelf->tb_alu__DOT__dut__DOT__diff = vlSelf->tb_alu__DOT__dut__DOT__x;
+        vlSelf->tb_alu__DOT__out = vlSelf->tb_alu__DOT__dut__DOT__diff;
+        if ((((~ (vlSelf->tb_alu__DOT__dut__DOT__a 
+                  >> 0x1fU)) & (vlSelf->tb_alu__DOT__input2 
+                                >> 0x1fU)) & (vlSelf->tb_alu__DOT__out 
+                                              >> 0x1fU))) {
             vlSelf->tb_alu__DOT__over = 1U;
-        } else if ((((tb_alu__DOT__dut__DOT__a >> 0x1fU) 
-                     & (~ (vlSelf->tb_alu__DOT__input2 
-                           >> 0x1fU))) & (~ (vlSelf->tb_alu__DOT__out 
-                                             >> 0x1fU)))) {
+        } else if ((((vlSelf->tb_alu__DOT__dut__DOT__a 
+                      >> 0x1fU) & (~ (vlSelf->tb_alu__DOT__input2 
+                                      >> 0x1fU))) & 
+                    (~ (vlSelf->tb_alu__DOT__out >> 0x1fU)))) {
             vlSelf->tb_alu__DOT__under = 1U;
         }
     } else {
-        tb_alu__DOT__dut__DOT__x = tb_alu__DOT__dut__DOT__a;
-        tb_alu__DOT__dut__DOT__y = tb_alu__DOT__dut__DOT__b;
-        while ((0U != tb_alu__DOT__dut__DOT__y)) {
-            tb_alu__DOT__dut__DOT__carry = (tb_alu__DOT__dut__DOT__x 
-                                            & tb_alu__DOT__dut__DOT__y);
-            tb_alu__DOT__dut__DOT__x = (tb_alu__DOT__dut__DOT__x 
-                                        ^ tb_alu__DOT__dut__DOT__y);
-            tb_alu__DOT__dut__DOT__y = VL_SHIFTL_III(32,32,32, tb_alu__DOT__dut__DOT__carry, 1U);
+        vlSelf->tb_alu__DOT__dut__DOT__x = vlSelf->tb_alu__DOT__dut__DOT__a;
+        vlSelf->tb_alu__DOT__dut__DOT__y = vlSelf->tb_alu__DOT__dut__DOT__b;
+        while ((0U != vlSelf->tb_alu__DOT__dut__DOT__y)) {
+            vlSelf->tb_alu__DOT__dut__DOT__carry = 
+                (vlSelf->tb_alu__DOT__dut__DOT__x & vlSelf->tb_alu__DOT__dut__DOT__y);
+            vlSelf->tb_alu__DOT__dut__DOT__x = (vlSelf->tb_alu__DOT__dut__DOT__x 
+                                                ^ vlSelf->tb_alu__DOT__dut__DOT__y);
+            vlSelf->tb_alu__DOT__dut__DOT__y = VL_SHIFTL_III(32,32,32, vlSelf->tb_alu__DOT__dut__DOT__carry, 1U);
         }
-        tb_alu__DOT__dut__DOT__sum = tb_alu__DOT__dut__DOT__x;
-        vlSelf->tb_alu__DOT__out = tb_alu__DOT__dut__DOT__sum;
-        if ((((~ (tb_alu__DOT__dut__DOT__a >> 0x1fU)) 
-              & (~ (tb_alu__DOT__dut__DOT__b >> 0x1fU))) 
-             & (vlSelf->tb_alu__DOT__out >> 0x1fU))) {
+        vlSelf->tb_alu__DOT__dut__DOT__sum = vlSelf->tb_alu__DOT__dut__DOT__x;
+        vlSelf->tb_alu__DOT__out = vlSelf->tb_alu__DOT__dut__DOT__sum;
+        if ((((~ (vlSelf->tb_alu__DOT__dut__DOT__a 
+                  >> 0x1fU)) & (~ (vlSelf->tb_alu__DOT__dut__DOT__b 
+                                   >> 0x1fU))) & (vlSelf->tb_alu__DOT__out 
+                                                  >> 0x1fU))) {
             vlSelf->tb_alu__DOT__over = 1U;
-        } else if ((1U & (((tb_alu__DOT__dut__DOT__a 
-                            & tb_alu__DOT__dut__DOT__b) 
+        } else if ((1U & (((vlSelf->tb_alu__DOT__dut__DOT__a 
+                            & vlSelf->tb_alu__DOT__dut__DOT__b) 
                            >> 0x1fU) & (~ (vlSelf->tb_alu__DOT__out 
                                            >> 0x1fU))))) {
             vlSelf->tb_alu__DOT__under = 1U;
@@ -173,6 +160,7 @@ void Vtb_alu___024root___eval_act(Vtb_alu___024root* vlSelf) {
     // Body
     if ((1ULL & vlSelf->__VactTriggered.word(0U))) {
         Vtb_alu___024root___act_sequent__TOP__0(vlSelf);
+        vlSelf->__Vm_traceActivity[1U] = 1U;
     }
 }
 
@@ -183,6 +171,7 @@ void Vtb_alu___024root___eval_nba(Vtb_alu___024root* vlSelf) {
     // Body
     if ((1ULL & vlSelf->__VnbaTriggered.word(0U))) {
         Vtb_alu___024root___act_sequent__TOP__0(vlSelf);
+        vlSelf->__Vm_traceActivity[2U] = 1U;
     }
 }
 
@@ -254,7 +243,7 @@ void Vtb_alu___024root___eval(Vtb_alu___024root* vlSelf) {
 #ifdef VL_DEBUG
             Vtb_alu___024root___dump_triggers__nba(vlSelf);
 #endif
-            VL_FATAL_MT("tb_alu.v", 4, "", "NBA region did not converge.");
+            VL_FATAL_MT("tb_alu.v", 5, "", "NBA region did not converge.");
         }
         __VnbaIterCount = ((IData)(1U) + __VnbaIterCount);
         __VnbaContinue = 0U;
@@ -265,7 +254,7 @@ void Vtb_alu___024root___eval(Vtb_alu___024root* vlSelf) {
 #ifdef VL_DEBUG
                 Vtb_alu___024root___dump_triggers__act(vlSelf);
 #endif
-                VL_FATAL_MT("tb_alu.v", 4, "", "Active region did not converge.");
+                VL_FATAL_MT("tb_alu.v", 5, "", "Active region did not converge.");
             }
             vlSelf->__VactIterCount = ((IData)(1U) 
                                        + vlSelf->__VactIterCount);

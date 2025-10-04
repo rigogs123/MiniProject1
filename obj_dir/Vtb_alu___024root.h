@@ -23,7 +23,16 @@ class alignas(VL_CACHE_LINE_BYTES) Vtb_alu___024root final : public VerilatedMod
     IData/*31:0*/ tb_alu__DOT__input1;
     IData/*31:0*/ tb_alu__DOT__input2;
     IData/*31:0*/ tb_alu__DOT__out;
+    IData/*31:0*/ tb_alu__DOT__dut__DOT__a;
+    IData/*31:0*/ tb_alu__DOT__dut__DOT__b;
+    IData/*31:0*/ tb_alu__DOT__dut__DOT__sum;
+    IData/*31:0*/ tb_alu__DOT__dut__DOT__diff;
+    IData/*31:0*/ tb_alu__DOT__dut__DOT__x;
+    IData/*31:0*/ tb_alu__DOT__dut__DOT__y;
+    IData/*31:0*/ tb_alu__DOT__dut__DOT__carry;
     IData/*31:0*/ __VactIterCount;
+    QData/*63:0*/ tb_alu__DOT__dut__DOT__mult_result;
+    VlUnpacked<CData/*0:0*/, 3> __Vm_traceActivity;
     VlDelayScheduler __VdlySched;
     VlTriggerVec<1> __VstlTriggered;
     VlTriggerVec<1> __VactTriggered;

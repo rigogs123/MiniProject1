@@ -38,7 +38,7 @@ VL_ATTR_COLD void Vtb_alu___024root___eval_settle(Vtb_alu___024root* vlSelf) {
 #ifdef VL_DEBUG
             Vtb_alu___024root___dump_triggers__stl(vlSelf);
 #endif
-            VL_FATAL_MT("tb_alu.v", 4, "", "Settle region did not converge.");
+            VL_FATAL_MT("tb_alu.v", 5, "", "Settle region did not converge.");
         }
         __VstlIterCount = ((IData)(1U) + __VstlIterCount);
         __VstlContinue = 0U;
@@ -73,6 +73,9 @@ VL_ATTR_COLD void Vtb_alu___024root___eval_stl(Vtb_alu___024root* vlSelf) {
     // Body
     if ((1ULL & vlSelf->__VstlTriggered.word(0U))) {
         Vtb_alu___024root___act_sequent__TOP__0(vlSelf);
+        vlSelf->__Vm_traceActivity[2U] = 1U;
+        vlSelf->__Vm_traceActivity[1U] = 1U;
+        vlSelf->__Vm_traceActivity[0U] = 1U;
     }
 }
 
@@ -134,4 +137,15 @@ VL_ATTR_COLD void Vtb_alu___024root___ctor_var_reset(Vtb_alu___024root* vlSelf) 
     vlSelf->tb_alu__DOT__out = VL_RAND_RESET_I(32);
     vlSelf->tb_alu__DOT__over = VL_RAND_RESET_I(1);
     vlSelf->tb_alu__DOT__under = VL_RAND_RESET_I(1);
+    vlSelf->tb_alu__DOT__dut__DOT__a = VL_RAND_RESET_I(32);
+    vlSelf->tb_alu__DOT__dut__DOT__b = VL_RAND_RESET_I(32);
+    vlSelf->tb_alu__DOT__dut__DOT__sum = VL_RAND_RESET_I(32);
+    vlSelf->tb_alu__DOT__dut__DOT__diff = VL_RAND_RESET_I(32);
+    vlSelf->tb_alu__DOT__dut__DOT__x = VL_RAND_RESET_I(32);
+    vlSelf->tb_alu__DOT__dut__DOT__y = VL_RAND_RESET_I(32);
+    vlSelf->tb_alu__DOT__dut__DOT__mult_result = VL_RAND_RESET_Q(64);
+    vlSelf->tb_alu__DOT__dut__DOT__carry = VL_RAND_RESET_I(32);
+    for (int __Vi0 = 0; __Vi0 < 3; ++__Vi0) {
+        vlSelf->__Vm_traceActivity[__Vi0] = 0;
     }
+}

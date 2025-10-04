@@ -220,8 +220,8 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     __Vtemp_1[1U] = 0x755f7462U;
     __Vtemp_1[2U] = 0x616cU;
     vlSymsp->_vm_contextp__->dumpfile(VL_CVT_PACK_STR_NW(3, __Vtemp_1));
-    VL_PRINTF_MT("-Info: tb_alu.v:52: $dumpvar ignored, as Verilated without --trace\n");
-    VL_WRITEF("=== ALU demo run ===\n");
+    vlSymsp->_traceDumpOpen();
+    VL_WRITEF("=== EE275 ALU RUN ===\n");
     vlSelf->tb_alu__DOT__alu_sel = 0U;
     vlSelf->tb_alu__DOT__input1 = 1U;
     vlSelf->tb_alu__DOT__input2 = 2U;
@@ -233,7 +233,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__1__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -262,7 +262,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__3__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -291,7 +291,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__5__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -320,7 +320,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__7__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -349,7 +349,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__9__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -378,7 +378,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__11__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -407,7 +407,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__13__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -436,7 +436,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__15__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -465,7 +465,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__17__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -494,7 +494,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__19__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -523,7 +523,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__21__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -552,7 +552,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__23__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -581,7 +581,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__25__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -610,7 +610,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__27__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -639,7 +639,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__29__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -668,7 +668,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__31__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -697,7 +697,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__33__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -726,7 +726,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n",
               2040,__Vtask_tb_alu__DOT__show__35__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),
@@ -755,7 +755,7 @@ VL_INLINE_OPT VlCoroutine Vtb_alu___024root___eval_initial__TOP__Vtiming__0(Vtb_
     }
     co_await vlSelf->__VdlySched.delay(0x3e8ULL, nullptr, 
                                        "tb_alu.v", 
-                                       26);
+                                       27);
     VL_WRITEF("%0s | sel=%0#  A=0x%08x (%0d)  B=0x%08x (%0d)  ->  OUT=0x%08x (%0d)  OVER=%0b UNDER=%0b\n=== Done ===\n",
               2040,__Vtask_tb_alu__DOT__show__37__label.data(),
               4,(IData)(vlSelf->tb_alu__DOT__alu_sel),

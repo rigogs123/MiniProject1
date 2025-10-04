@@ -6,5 +6,15 @@ verilator --binary dmem.v tb_dmem.v --top tb_dmem
 
 
 
-verilator --binary file1.v file2.v ... --top <top_module_name>
+verilator --binary --trace file1.v file2.v ... --top <top_module_name>
 ./obj_dir/V<tb_name>
+
+
+
+
+
+GTK wave:
+
+make sure TB has includes inside initial block:
+
+$dumpfile("<tbname>_tb.vcd");
