@@ -1,6 +1,6 @@
 //here the reg file will be implemented
 
-module reg_file (
+module regfile (
     input wire [4:0] reg1_in, //done
     input wire [4:0] reg2_in, //done
     input wire [4:0] reg_source_in, //done

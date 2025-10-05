@@ -1,6 +1,6 @@
 /* verilator lint_off TIMESCALEMOD */
 `include "variables.vh"
-module dmem (
+module imem (
 
     input wire clk,
     input wire write_en,
@@ -16,7 +16,7 @@ module dmem (
 
     // Memory initialization
     initial begin
-        $readmemh("DMEM_MEMORY_IN.hex", mem);
+        $readmemh("IMEM_MEMORY_IN.hex", mem);
     end
 
     // Memory access
@@ -43,7 +43,7 @@ module dmem (
 
     // Optional write-back to file
     final begin
-        $writememh("DMEM_MEMORY_OUT.hex", mem);
+        $writememh("IMEM_MEMORY_OUT.hex", mem);
     end
 endmodule
 
