@@ -1,5 +1,5 @@
 //This module concatenates immediates based on the instruction type and the operation
-
+/* verilator lint_off TIMESCALEMOD */
 module imm_gen (
     input wire [4:0] a,
     input wire [4:0] b,
@@ -19,3 +19,4 @@ module imm_gen (
         endcase
    end 
 endmodule
+/* verilator lint_on TIMESCALEMOD */

@@ -8,8 +8,8 @@ module tb_cpu;
 
   // Testbench signals
   reg clk;
-  reg reg_obs_sel;
-  wire reg_obs_data;
+  reg [4:0] reg_obs_sel;
+  wire [31:0] reg_obs_data;
 
   // Instantiate the DUT (Device Under Test)
   cpu_top uut (

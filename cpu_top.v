@@ -4,8 +4,8 @@
 `include "variables.vh"
 module cpu_top (
     input wire clk,
-    input wire reg_obs_sel,
-    output wire reg_obs_data
+    input wire [4:0] reg_obs_sel,
+    output wire [31:0] reg_obs_data
 );
     wire [31:0] pc;
     wire [31:0] pc_4;
@@ -26,7 +26,7 @@ module cpu_top (
     wire mux_1_sel;
     wire mux_2_sel;
     wire mux_3_sel;
-    wire alu_sel;
+    wire [3:0] alu_sel;
     wire [31:0] mux1_out;
     wire [31:0] mux2_out;
     wire [31:0] mux3_out;
@@ -54,12 +54,12 @@ module cpu_top (
         .clk(clk),
         .Q(pc_mux_ex)
     );
-    register_32bit INST_PIPE_REG (
+    register_5bit INST_PIPE_REG (
         .D(inst[10:6]),
         .clk(clk),
         .Q(wb_reg_dest)
     );
-    register_32bit WEN_PIPE_REG (
+    register_1bit WEN_PIPE_REG (
         .D(reg_wen),
         .clk(clk),
         .Q(wb_reg_wen)
@@ -69,7 +69,7 @@ module cpu_top (
         .clk(clk),
         .Q(wb_alu_out)
     );
-    register_32bit WB_PIPE_REG (
+    register_1bit WB_PIPE_REG (
         .D(wb_sel_d),
         .clk(clk),
         .Q(wb_sel_q)

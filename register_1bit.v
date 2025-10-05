@@ -1,11 +1,10 @@
-//This module implements a 32 bit register 
 /* verilator lint_off TIMESCALEMOD */
-module register_32bit (
-    input wire [31:0] D,
+module register_1bit (
+    input wire D,
     input wire clk,
-    output wire [31:0] Q
+    output wire Q
 );
-    reg [31:0] data;
+    reg data;
     initial data = 0;
     assign Q = data;
 

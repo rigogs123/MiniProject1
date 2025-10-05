@@ -19,7 +19,7 @@ to that branch type is set i.e. (op_in == BEQ && bit[3]), then we need to set br
 to output a 1'b1, otherwise it needs to output a 0. We also need to clear the bit in ccr_out
 if these conditions are encountered, otherwise the corresponding bit in ccr_out can stay the same as ccr_in.
 */
-
+/* verilator lint_off TIMESCALEMOD */
 `include "opcodes.vh"
 
 module ccr_logic (
@@ -82,3 +82,4 @@ module ccr_logic (
     end
 
 endmodule
+/* verilator lint_on TIMESCALEMOD */

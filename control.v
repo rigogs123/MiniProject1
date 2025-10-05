@@ -1,4 +1,5 @@
 //here the control for the pipeline will be implemented
+/* verilator lint_off TIMESCALEMOD */
 `include "opcodes.vh"
 module control (
     input wire [1:0] type_in,
@@ -71,7 +72,7 @@ module control (
         end else if (type_in == `M_TYPE) begin 
             case (op_in)
                 `LW: output_vector = 19'b0101000000010000000;
-                `SW: output_vector = 19'b0100000000010010110;
+                `STW: output_vector = 19'b0100000000010010110;
                 default: output_vector = 19'b0;
             endcase        
         end else if (type_in == `B_TYPE) begin
@@ -102,3 +103,4 @@ module control (
     end
 
 endmodule
+/* verilator lint_on TIMESCALEMOD */

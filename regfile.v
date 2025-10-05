@@ -1,5 +1,5 @@
 //here the reg file will be implemented
-
+/* verilator lint_off TIMESCALEMOD */
 module regfile (
     input wire [4:0] reg1_in, //done
     input wire [4:0] reg2_in, //done
@@ -245,4 +245,4 @@ module regfile (
         .Q(SP_out)
     );
 endmodule
-
+/* verilator lint_on TIMESCALEMOD */

@@ -43,8 +43,26 @@ module dmem (
     end
 
     // Optional write-back to file
+    //final begin
+        //$writememh("DMEM_MEMORY_OUT.hex", mem);
+    //end
     final begin
-        $writememh("DMEM_MEMORY_OUT.hex", mem);
+        integer fd;
+        integer addr;
+        reg [31:0] word_data;
+
+        fd = $fopen("DMEM_MEMORY_OUT.hex", "w");
+        if (fd == 0) begin
+            $display("ERROR: Cannot open DMEM_MEMORY_OUT.hex for writing");
+        end else begin
+            for (addr = 0; addr < `MEM_BYTES_DMEM; addr = addr + 4) begin
+            // little-endian packing
+            word_data = {mem[addr+3], mem[addr+2], mem[addr+1], mem[addr+0]};
+            $fdisplay(fd, "0x%08h:%08h", addr, word_data);
+            end
+            $fclose(fd);
+            $display("DMEM memory contents written to DMEM_MEMORY_OUT.hex");
+        end
     end
 endmodule
 
