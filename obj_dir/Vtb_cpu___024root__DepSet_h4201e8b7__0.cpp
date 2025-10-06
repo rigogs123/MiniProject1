@@ -794,46 +794,82 @@ VL_INLINE_OPT void Vtb_cpu___024root___nba_sequent__TOP__0(Vtb_cpu___024root* vl
     vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__carry = 0U;
     vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__mult_result = 0ULL;
     if ((0x1000U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
-        vlSelf->tb_cpu__DOT__uut__DOT__alu_out = ((0x800U 
-                                                   & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
-                                                   ? 
-                                                  ((0x400U 
-                                                    & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
-                                                    ? 0U
-                                                    : 
-                                                   ((0x200U 
-                                                     & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
-                                                     ? 0U
-                                                     : 
-                                                    (VL_GTES_III(32, vlSelf->tb_cpu__DOT__uut__DOT__mux1_out, vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)
-                                                      ? 1U
-                                                      : 0U)))
-                                                   : 
-                                                  ((0x400U 
-                                                    & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
-                                                    ? 
-                                                   ((0x200U 
-                                                     & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
-                                                     ? 
-                                                    (VL_GTS_III(32, vlSelf->tb_cpu__DOT__uut__DOT__mux1_out, vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)
-                                                      ? 1U
-                                                      : 0U)
-                                                     : 
-                                                    (VL_LTES_III(32, vlSelf->tb_cpu__DOT__uut__DOT__mux1_out, vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)
-                                                      ? 1U
-                                                      : 0U))
-                                                    : 
-                                                   ((0x200U 
-                                                     & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
-                                                     ? 
-                                                    (VL_LTS_III(32, vlSelf->tb_cpu__DOT__uut__DOT__mux1_out, vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)
-                                                      ? 1U
-                                                      : 0U)
-                                                     : 
-                                                    ((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
-                                                      != vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)
-                                                      ? 1U
-                                                      : 0U))));
+        if ((0x800U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
+            if ((0x400U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
+                vlSelf->tb_cpu__DOT__uut__DOT__alu_out = 0U;
+            } else if ((0x200U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
+                vlSelf->tb_cpu__DOT__uut__DOT__alu_out = 0U;
+            } else {
+                vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk4__DOT__diff 
+                    = ((IData)(1U) + (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                      + (~ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)));
+                vlSelf->tb_cpu__DOT__uut__DOT__alu_out 
+                    = ((1U & (((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                >> 0x1fU) & (~ (vlSelf->tb_cpu__DOT__uut__DOT__mux2_out 
+                                                >> 0x1fU))) 
+                              | ((~ ((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                      ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out) 
+                                     >> 0x1fU)) & (vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk4__DOT__diff 
+                                                   >> 0x1fU))))
+                        ? 0U : 1U);
+            }
+        } else if ((0x400U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
+            if ((0x200U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
+                vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk3__DOT__diff 
+                    = ((IData)(1U) + (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                      + (~ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)));
+                vlSelf->tb_cpu__DOT__uut__DOT__alu_out 
+                    = ((1U & ((((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                 >> 0x1fU) & (~ (vlSelf->tb_cpu__DOT__uut__DOT__mux2_out 
+                                                 >> 0x1fU))) 
+                               | ((~ ((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                       ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out) 
+                                      >> 0x1fU)) & 
+                                  (vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk3__DOT__diff 
+                                   >> 0x1fU))) | (~ (IData)(
+                                                            (0U 
+                                                             != 
+                                                             (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                                              ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out))))))
+                        ? 0U : 1U);
+            } else {
+                vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk2__DOT__diff 
+                    = ((IData)(1U) + (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                      + (~ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)));
+                vlSelf->tb_cpu__DOT__uut__DOT__alu_out 
+                    = ((1U & ((((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                 >> 0x1fU) & (~ (vlSelf->tb_cpu__DOT__uut__DOT__mux2_out 
+                                                 >> 0x1fU))) 
+                               | ((~ ((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                       ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out) 
+                                      >> 0x1fU)) & 
+                                  (vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk2__DOT__diff 
+                                   >> 0x1fU))) | (~ (IData)(
+                                                            (0U 
+                                                             != 
+                                                             (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                                              ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out))))))
+                        ? 1U : 0U);
+            }
+        } else if ((0x200U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
+            vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk1__DOT__diff 
+                = ((IData)(1U) + (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                  + (~ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)));
+            vlSelf->tb_cpu__DOT__uut__DOT__alu_out 
+                = ((1U & (((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                            >> 0x1fU) & (~ (vlSelf->tb_cpu__DOT__uut__DOT__mux2_out 
+                                            >> 0x1fU))) 
+                          | ((~ ((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                  ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out) 
+                                 >> 0x1fU)) & (vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk1__DOT__diff 
+                                               >> 0x1fU))))
+                    ? 1U : 0U);
+        } else {
+            vlSelf->tb_cpu__DOT__uut__DOT__alu_out 
+                = ((0U != (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                           ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out))
+                    ? 1U : 0U);
+        }
     } else if ((0x800U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
         vlSelf->tb_cpu__DOT__uut__DOT__alu_out = ((0x400U 
                                                    & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
@@ -841,10 +877,12 @@ VL_INLINE_OPT void Vtb_cpu___024root___nba_sequent__TOP__0(Vtb_cpu___024root* vl
                                                   ((0x200U 
                                                     & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
                                                     ? 
-                                                   ((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
-                                                     == vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)
-                                                     ? 1U
-                                                     : 0U)
+                                                   ((0U 
+                                                     != 
+                                                     (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                                      ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out))
+                                                     ? 0U
+                                                     : 1U)
                                                     : 
                                                    (~ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out))
                                                    : 

@@ -1,4 +1,4 @@
-
+/* verilator lint_off LATCH */
 /* verilator lint_off TIMESCALEMOD */
 `include "opcodes.vh"
 
@@ -96,13 +96,28 @@ module alu (
             `XOR: out = input1 ^ input2;
             `NOT: out = ~input2;
             
-            `EQ:  out = (input1 == input2) ? 32'd1 : 32'd0;
-            `NEQ: out = (input1 != input2) ? 32'd1 : 32'd0;
-            `LT:  out = ($signed(input1) <  $signed(input2)) ? 32'd1 : 32'd0;
-            `LTE: out = ($signed(input1) <= $signed(input2)) ? 32'd1 : 32'd0;
-            `GT:  out = ($signed(input1) >  $signed(input2)) ? 32'd1 : 32'd0;
-            `GTE: out = ($signed(input1) >= $signed(input2)) ? 32'd1 : 32'd0;
-
+            `EQ: out = (~| (input1 ^ input2)) ? 32'd1 : 32'd0;
+            `NEQ: out = (| (input1 ^ input2)) ? 32'd1 : 32'd0;
+            `LT: begin
+                reg [31:0] diff;
+                diff = input1 + (~input2 + 1);
+                out = ((input1[31] & ~input2[31]) | (~(input1[31] ^ input2[31]) & diff[31])) ? 32'd1 : 32'd0;
+            end
+            `LTE: begin
+                reg [31:0] diff;
+                diff = input1 + (~input2 + 1);
+                out = (((input1[31] & ~input2[31]) | (~(input1[31] ^ input2[31]) & diff[31])) | (~| (input1 ^ input2))) ? 32'd1 : 32'd0;
+            end
+            `GT: begin
+                reg [31:0] diff;
+                diff = input1 + (~input2 + 1);
+                out = (~(((input1[31] & ~input2[31]) | (~(input1[31] ^ input2[31]) & diff[31])) | (~| (input1 ^ input2)))) ? 32'd1 : 32'd0;
+            end
+            `GTE: begin
+                reg [31:0] diff;
+                diff = input1 + (~input2 + 1);
+                out = (~((input1[31] & ~input2[31]) | (~(input1[31] ^ input2[31]) & diff[31]))) ? 32'd1 : 32'd0;
+            end
             default: out = 32'd0;
 
         endcase
@@ -110,3 +125,4 @@ module alu (
 
 endmodule
 /* verilator lint_on TIMESCALEMOD */
+/* verilator lint_on LATCH */

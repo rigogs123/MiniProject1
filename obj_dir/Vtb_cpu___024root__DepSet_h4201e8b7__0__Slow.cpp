@@ -101,7 +101,7 @@ VL_ATTR_COLD void Vtb_cpu___024root___eval_final__TOP(Vtb_cpu___024root* vlSelf)
                                   ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
                                     [1U] << 8U) | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
                                    [0U])));
-        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__addr = 0x40U;
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__addr = 0x100U;
         VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000000:%08x\n",
                    32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
         vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
@@ -252,6 +252,486 @@ VL_ATTR_COLD void Vtb_cpu___024root___eval_final__TOP(Vtb_cpu___024root* vlSelf)
                                         | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
                                         [0x3cU])));
         VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x0000003c:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x43U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x42U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x41U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x40U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000040:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x47U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x46U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x45U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x44U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000044:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x4bU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x4aU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x49U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x48U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000048:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x4fU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x4eU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x4dU] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x4cU])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x0000004c:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x53U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x52U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x51U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x50U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000050:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x57U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x56U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x55U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x54U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000054:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x5bU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x5aU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x59U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x58U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000058:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x5fU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x5eU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x5dU] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x5cU])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x0000005c:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x63U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x62U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x61U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x60U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000060:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x67U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x66U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x65U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x64U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000064:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x6bU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x6aU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x69U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x68U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000068:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x6fU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x6eU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x6dU] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x6cU])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x0000006c:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x73U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x72U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x71U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x70U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000070:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x77U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x76U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x75U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x74U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000074:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x7bU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x7aU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x79U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x78U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000078:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x7fU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x7eU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x7dU] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x7cU])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x0000007c:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x83U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x82U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x81U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x80U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000080:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x87U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x86U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x85U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x84U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000084:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x8bU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x8aU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x89U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x88U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000088:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x8fU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x8eU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x8dU] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x8cU])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x0000008c:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x93U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x92U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x91U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x90U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000090:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x97U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x96U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x95U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x94U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000094:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x9bU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x9aU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x99U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x98U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x00000098:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0x9fU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0x9eU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0x9dU] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0x9cU])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x0000009c:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xa3U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xa2U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xa1U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xa0U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000a0:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xa7U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xa6U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xa5U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xa4U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000a4:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xabU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xaaU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xa9U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xa8U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000a8:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xafU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xaeU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xadU] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xacU])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000ac:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xb3U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xb2U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xb1U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xb0U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000b0:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xb7U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xb6U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xb5U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xb4U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000b4:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xbbU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xbaU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xb9U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xb8U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000b8:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xbfU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xbeU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xbdU] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xbcU])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000bc:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xc3U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xc2U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xc1U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xc0U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000c0:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xc7U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xc6U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xc5U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xc4U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000c4:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xcbU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xcaU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xc9U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xc8U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000c8:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xcfU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xceU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xcdU] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xccU])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000cc:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xd3U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xd2U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xd1U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xd0U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000d0:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xd7U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xd6U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xd5U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xd4U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000d4:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xdbU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xdaU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xd9U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xd8U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000d8:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xdfU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xdeU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xddU] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xdcU])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000dc:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xe3U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xe2U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xe1U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xe0U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000e0:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xe7U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xe6U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xe5U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xe4U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000e4:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xebU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xeaU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xe9U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xe8U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000e8:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xefU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xeeU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xedU] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xecU])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000ec:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xf3U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xf2U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xf1U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xf0U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000f0:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xf7U] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xf6U] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xf5U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xf4U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000f4:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xfbU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xfaU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xf9U] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xf8U])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000f8:%08x\n",
+                   32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
+        vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data 
+            = ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                [0xffU] << 0x18U) | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                      [0xfeU] << 0x10U) 
+                                     | ((vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                         [0xfdU] << 8U) 
+                                        | vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__mem
+                                        [0xfcU])));
+        VL_FWRITEF(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd,"0x000000fc:%08x\n",
                    32,vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__word_data);
         VL_FCLOSE_I(vlSelf->tb_cpu__DOT__uut__DOT__IMEM__DOT__unnamedblk1__DOT__fd); VL_WRITEF("DMEM memory contents written to DMEM_MEMORY_OUT.hex\n");
     }
@@ -1033,46 +1513,82 @@ VL_ATTR_COLD void Vtb_cpu___024root___stl_sequent__TOP__0(Vtb_cpu___024root* vlS
     vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__carry = 0U;
     vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__mult_result = 0ULL;
     if ((0x1000U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
-        vlSelf->tb_cpu__DOT__uut__DOT__alu_out = ((0x800U 
-                                                   & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
-                                                   ? 
-                                                  ((0x400U 
-                                                    & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
-                                                    ? 0U
-                                                    : 
-                                                   ((0x200U 
-                                                     & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
-                                                     ? 0U
-                                                     : 
-                                                    (VL_GTES_III(32, vlSelf->tb_cpu__DOT__uut__DOT__mux1_out, vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)
-                                                      ? 1U
-                                                      : 0U)))
-                                                   : 
-                                                  ((0x400U 
-                                                    & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
-                                                    ? 
-                                                   ((0x200U 
-                                                     & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
-                                                     ? 
-                                                    (VL_GTS_III(32, vlSelf->tb_cpu__DOT__uut__DOT__mux1_out, vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)
-                                                      ? 1U
-                                                      : 0U)
-                                                     : 
-                                                    (VL_LTES_III(32, vlSelf->tb_cpu__DOT__uut__DOT__mux1_out, vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)
-                                                      ? 1U
-                                                      : 0U))
-                                                    : 
-                                                   ((0x200U 
-                                                     & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
-                                                     ? 
-                                                    (VL_LTS_III(32, vlSelf->tb_cpu__DOT__uut__DOT__mux1_out, vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)
-                                                      ? 1U
-                                                      : 0U)
-                                                     : 
-                                                    ((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
-                                                      != vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)
-                                                      ? 1U
-                                                      : 0U))));
+        if ((0x800U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
+            if ((0x400U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
+                vlSelf->tb_cpu__DOT__uut__DOT__alu_out = 0U;
+            } else if ((0x200U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
+                vlSelf->tb_cpu__DOT__uut__DOT__alu_out = 0U;
+            } else {
+                vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk4__DOT__diff 
+                    = ((IData)(1U) + (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                      + (~ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)));
+                vlSelf->tb_cpu__DOT__uut__DOT__alu_out 
+                    = ((1U & (((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                >> 0x1fU) & (~ (vlSelf->tb_cpu__DOT__uut__DOT__mux2_out 
+                                                >> 0x1fU))) 
+                              | ((~ ((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                      ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out) 
+                                     >> 0x1fU)) & (vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk4__DOT__diff 
+                                                   >> 0x1fU))))
+                        ? 0U : 1U);
+            }
+        } else if ((0x400U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
+            if ((0x200U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
+                vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk3__DOT__diff 
+                    = ((IData)(1U) + (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                      + (~ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)));
+                vlSelf->tb_cpu__DOT__uut__DOT__alu_out 
+                    = ((1U & ((((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                 >> 0x1fU) & (~ (vlSelf->tb_cpu__DOT__uut__DOT__mux2_out 
+                                                 >> 0x1fU))) 
+                               | ((~ ((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                       ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out) 
+                                      >> 0x1fU)) & 
+                                  (vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk3__DOT__diff 
+                                   >> 0x1fU))) | (~ (IData)(
+                                                            (0U 
+                                                             != 
+                                                             (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                                              ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out))))))
+                        ? 0U : 1U);
+            } else {
+                vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk2__DOT__diff 
+                    = ((IData)(1U) + (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                      + (~ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)));
+                vlSelf->tb_cpu__DOT__uut__DOT__alu_out 
+                    = ((1U & ((((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                 >> 0x1fU) & (~ (vlSelf->tb_cpu__DOT__uut__DOT__mux2_out 
+                                                 >> 0x1fU))) 
+                               | ((~ ((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                       ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out) 
+                                      >> 0x1fU)) & 
+                                  (vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk2__DOT__diff 
+                                   >> 0x1fU))) | (~ (IData)(
+                                                            (0U 
+                                                             != 
+                                                             (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                                              ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out))))))
+                        ? 1U : 0U);
+            }
+        } else if ((0x200U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
+            vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk1__DOT__diff 
+                = ((IData)(1U) + (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                  + (~ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)));
+            vlSelf->tb_cpu__DOT__uut__DOT__alu_out 
+                = ((1U & (((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                            >> 0x1fU) & (~ (vlSelf->tb_cpu__DOT__uut__DOT__mux2_out 
+                                            >> 0x1fU))) 
+                          | ((~ ((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                  ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out) 
+                                 >> 0x1fU)) & (vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk1__DOT__diff 
+                                               >> 0x1fU))))
+                    ? 1U : 0U);
+        } else {
+            vlSelf->tb_cpu__DOT__uut__DOT__alu_out 
+                = ((0U != (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                           ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out))
+                    ? 1U : 0U);
+        }
     } else if ((0x800U & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)) {
         vlSelf->tb_cpu__DOT__uut__DOT__alu_out = ((0x400U 
                                                    & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
@@ -1080,10 +1596,12 @@ VL_ATTR_COLD void Vtb_cpu___024root___stl_sequent__TOP__0(Vtb_cpu___024root* vlS
                                                   ((0x200U 
                                                     & vlSelf->tb_cpu__DOT__uut__DOT__CONTROL__DOT__output_vector)
                                                     ? 
-                                                   ((vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
-                                                     == vlSelf->tb_cpu__DOT__uut__DOT__mux2_out)
-                                                     ? 1U
-                                                     : 0U)
+                                                   ((0U 
+                                                     != 
+                                                     (vlSelf->tb_cpu__DOT__uut__DOT__mux1_out 
+                                                      ^ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out))
+                                                     ? 0U
+                                                     : 1U)
                                                     : 
                                                    (~ vlSelf->tb_cpu__DOT__uut__DOT__mux2_out))
                                                    : 
@@ -1388,6 +1906,10 @@ VL_ATTR_COLD void Vtb_cpu___024root___ctor_var_reset(Vtb_cpu___024root* vlSelf) 
     vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__y = VL_RAND_RESET_I(32);
     vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__mult_result = VL_RAND_RESET_Q(64);
     vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__carry = VL_RAND_RESET_I(32);
+    vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk1__DOT__diff = VL_RAND_RESET_I(32);
+    vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk2__DOT__diff = VL_RAND_RESET_I(32);
+    vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk3__DOT__diff = VL_RAND_RESET_I(32);
+    vlSelf->tb_cpu__DOT__uut__DOT__ALU__DOT__unnamedblk4__DOT__diff = VL_RAND_RESET_I(32);
     vlSelf->tb_cpu__DOT__uut__DOT__REGFILE__DOT__R1_out = VL_RAND_RESET_I(32);
     vlSelf->tb_cpu__DOT__uut__DOT__REGFILE__DOT__R2_out = VL_RAND_RESET_I(32);
     vlSelf->tb_cpu__DOT__uut__DOT__REGFILE__DOT__R3_out = VL_RAND_RESET_I(32);
