@@ -4,7 +4,7 @@
 `ifndef VARIABLES
 `define VARIABLES
 
-`define MEM_BYTES_DMEM 32
-`define MEM_BYTES_IMEM 32
+`define MEM_BYTES_DMEM 64
+`define MEM_BYTES_IMEM 256
 
 `endif

@@ -75,8 +75,38 @@ module ccr_logic (
                     br_out = 1'b0;
                 end
             endcase
-        end else begin
+        end else if (type_in == `R_TYPE) begin
             // For non-branch instructions, preserve bits [3:8]
+            case (op_in)
+                `EQ: begin
+                    br_out = ccr_in[3];
+                    ccr_out[3] = 1'b1;
+                end
+                `NEQ: begin
+                    br_out = ccr_in[4];
+                    ccr_out[4] = 1'b1;
+                end
+                `LT: begin
+                    br_out = ccr_in[5];
+                    ccr_out[5] = 1'b1;
+                end
+                `LTE: begin
+                    br_out = ccr_in[6];
+                    ccr_out[6] = 1'b1;
+                end
+                `GT: begin
+                    br_out = ccr_in[7];
+                    ccr_out[7] = 1'b1;
+                end
+                `GTE: begin
+                    br_out = ccr_in[8];
+                    ccr_out[8] = 1'b1;
+                end
+                default: begin
+                    br_out = 1'b0;
+                end
+            endcase            
+        end else begin
             ccr_out[8:3] = ccr_in[8:3];
         end
     end

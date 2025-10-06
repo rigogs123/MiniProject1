@@ -34,7 +34,7 @@ module tb_cpu;
     $dumpvars(0, tb_cpu_top);
 
     // Run for 35 clock cycles
-    repeat (35) @(posedge clk);
+    repeat (128) @(posedge clk);
 
     $display("Simulation finished after 35 clock cycles.");
     $finish;

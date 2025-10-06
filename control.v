@@ -78,22 +78,22 @@ module control (
         end else if (type_in == `B_TYPE) begin
             if (br_in) begin
                 case (op_in)
-                    `BEQ:  output_vector = 19'b0110100000111000001;
-                    `BNEQ: output_vector = 19'b0110100000111000101;
-                    `BLT:  output_vector = 19'b0110100000111001001;
-                    `BLTE: output_vector = 19'b0110100000111001101;
-                    `BGT:  output_vector = 19'b0110100000111010001;
-                    `BGTE: output_vector = 19'b0110100000111010101;
-                    default: output_vector = 19'b0;
-                endcase
-            end else begin
-                case (op_in)
                     `BEQ:  output_vector = 19'b1111100000111000001;
                     `BNEQ: output_vector = 19'b1111100000111000101;
                     `BLT:  output_vector = 19'b1111100000111001001;
                     `BLTE: output_vector = 19'b1111100000111001101;
                     `BGT:  output_vector = 19'b1111100000111010001;
                     `BGTE: output_vector = 19'b1111100000111010101;
+                    default: output_vector = 19'b0;
+                endcase
+            end else begin
+                case (op_in)
+                    `BEQ:  output_vector = 19'b0110100000111000001;
+                    `BNEQ: output_vector = 19'b0110100000111000101;
+                    `BLT:  output_vector = 19'b0110100000111001001;
+                    `BLTE: output_vector = 19'b0110100000111001101;
+                    `BGT:  output_vector = 19'b0110100000111010001;
+                    `BGTE: output_vector = 19'b0110100000111010101;
                     default: output_vector = 19'b0;
                 endcase
             end

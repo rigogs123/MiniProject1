@@ -94,7 +94,7 @@ module alu (
             `AND: out = input1 & input2;
             `OR:  out = input1 | input2;
             `XOR: out = input1 ^ input2;
-            `NOT: out = ~input1;
+            `NOT: out = ~input2;
             
             `EQ:  out = (input1 == input2) ? 32'd1 : 32'd0;
             `NEQ: out = (input1 != input2) ? 32'd1 : 32'd0;
